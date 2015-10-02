@@ -17,7 +17,7 @@ function ques1(){
   console.log("Question 1 User Response: " + question1);
   if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1]) {
   console.log('Question 1 correct.');
-  one.innerHTML = 'Rejoice! ' + username + ', you answered Question 1 correctly...I AM from Malaysia!';
+  one.innerHTML = 'Rejoice! ' + username + ', you answered Question 1 correctly...I AM from Malaysia!' + "<p><img src= 'img/pokemon.png' width = '200' height ='200'/> </p>";
   correct++;
   } else {
   console.log('Question 1 wrong.');
@@ -31,7 +31,7 @@ function ques2(){
   console.log("Question 2 User Response: " + question2);
   if (question2.toUpperCase() === answers[2] || question2.toUpperCase() === answers[3]) {
   console.log('Question 2 correct.');
-  two.innerHTML = 'Rejoice! ' + username + ', you answered Question 2 correctly...I just moved to Seattle!';
+  two.innerHTML = 'Rejoice! ' + username + ', you answered Question 2 correctly...I just moved to Seattle!' + "<p><img src= 'img/pokemon.png' width = '200' height ='200'/> </p>";
   correct++;
   } else {
   console.log('Question 2 wrong.');
@@ -45,7 +45,7 @@ function ques3(){
   console.log("Question 3 User Response: " + question3);
   if (question3.toUpperCase() === answers[0] || question3.toUpperCase() === answers[1]) {
   console.log('Question 3 correct.');
-  three.innerHTML = 'Rejoice! ' + username + ', you answered Question 3 correctly...I LOVE to surf!';
+  three.innerHTML = 'Rejoice! ' + username + ', you answered Question 3 correctly...I LOVE to surf!' + "<p><img src= 'img/pokemon.png' width = '200' height ='200'/> </p>";
   correct++;
   } else {
   console.log('Question 3 wrong.');
