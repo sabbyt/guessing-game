@@ -1,12 +1,13 @@
-
+document.getElementById("welcome");
 document.getElementById("one");
 document.getElementById("two");
 document.getElementById("three");
+document.getElementById("four");
 
 var username = prompt("What is your name?").toUpperCase();
 console.log(username);
+welcome.innerHTML="Welcome "+username+"!";
 var correct = 0;
-alert("Welcome "+username+"!");
 
 function ques1(){
   var question1 = prompt("Am I from Malaysia?");
@@ -18,7 +19,7 @@ function ques1(){
   } else {
   console.log('Question 1 wrong.');
   one.innerHTML = "No "+ username + ", you got Question 1 wrong...I AM from Malaysia!";
-  };
+  }
 
 }
 
@@ -32,7 +33,7 @@ function ques2(){
   } else {
   console.log('Question 2 wrong.');
   two.innerHTML = "No "+ username + ", you got Question 2 wrong...I just moved to Seattle!";
-  };
+  }
 
 }
 
@@ -46,7 +47,7 @@ function ques3(){
   } else {
   console.log('Question 3 wrong.');
   three.innerHTML = "No "+ username + ", you got Question 3 wrong...I LOVE to surf!";
-  };
+  }
 
 }
 
@@ -54,4 +55,8 @@ ques1();
 ques2();
 ques3();
 
-alert("You just got " + correct + " out of 3 questions correct! " + username + ", thanks for playing my little guessing game!");
+function summary() {
+  four.innerHTML = "You just got " + correct + " out of 3 questions correct! " + username + ", thanks for playing my little guessing game!";
+}
+
+summary();
