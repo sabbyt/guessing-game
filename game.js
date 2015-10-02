@@ -58,8 +58,8 @@ function ques3(){
 }
 
 ques1();
-ques2();
-ques3();
+window.setTimeout(ques2, 1000);
+window.setTimeout(ques3, 1000);
 
 function summary() {
   four.innerHTML = "You just got " + correct + " out of 3 questions correct! " + username + ", thanks for playing my little guessing game!";
