@@ -5,13 +5,13 @@ document.getElementById("three");
 document.getElementById("four");
 
 var username = prompt("What is your name?").toUpperCase();
-console.log(username);
+console.log("username: "+username);
 welcome.innerHTML="Welcome "+username+"!";
 var correct = 0;
 
 function ques1(){
   var question1 = prompt("Am I from Malaysia?");
-  console.log("Question 1 Response: " + question1);
+  console.log("Question 1 User Response: " + question1);
   if (question1.toUpperCase() === 'YES' || question1.toUpperCase() === 'Y') {
   console.log('Question 1 correct.');
   one.innerHTML = 'Rejoice! ' + username + ', you answered Question 1 correctly...I AM from Malaysia!';
@@ -25,7 +25,7 @@ function ques1(){
 
 function ques2(){
   var question2 = prompt("Have I lived in Seattle for years?");
-  console.log("Question 2 Response: " + question2);
+  console.log("Question 2 User Response: " + question2);
   if (question2.toUpperCase() === 'NO' || question2.toUpperCase() === 'N') {
   console.log('Question 2 correct.');
   two.innerHTML = 'Rejoice! ' + username + ', you answered Question 2 correctly...I just moved to Seattle!';
@@ -39,7 +39,7 @@ function ques2(){
 
 function ques3(){
   var question3 = prompt("Do I surf?");
-  console.log("Question 3 Response: " + question3);
+  console.log("Question 3 User Response: " + question3);
   if (question3.toUpperCase() === 'YES' || question3.toUpperCase() === 'Y') {
   console.log('Question 3 correct.');
   three.innerHTML = 'Rejoice! ' + username + ', you answered Question 3 correctly...I LOVE to surf!';
